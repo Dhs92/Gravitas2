@@ -616,9 +616,10 @@ let gtceuAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     })
     .damageIngredient(["#forge:tools"])
   event.recipes.kubejs
-    .shaped("3x gtceu:compressed_coke_clay", ["CCC", "SFS", "SSS"], {
+    .shaped("3x gtceu:compressed_coke_clay", ["CXC", "SFS", "SSS"], {
       C: "minecraft:clay_ball",
       S: "#forge:sand",
+      X: "tfc:fire_clay",
       F: "gtceu:brick_wooden_form"
     })
     .damageIngredient(["gtceu:brick_wooden_form"])
