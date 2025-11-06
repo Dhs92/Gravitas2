@@ -1328,6 +1328,16 @@ let gtceuAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     .EUt(LV)
     .duration(50)
 
+  // mortar
+  event.recipes.gtceu
+    .mixer("gt_mixer_mortar")
+    .itemInputs("#forge:sand")
+    .inputFluids(Fluid.of("tfc:limewater", 100))
+    .inputFluids(Fluid.of("gtceu:concrete", 100))
+    .itemOutputs("32x tfc:mortar")
+    .EUt(LV)
+    .duration(75)
+
   //olive oil
 
   event.recipes.gtceu

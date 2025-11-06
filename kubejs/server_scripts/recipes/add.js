@@ -2458,6 +2458,10 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
     L: "#tfc:lamps"
   }).id("coldsgrappler:grappler")
 
+  shaped("immersiveengineering:wooden_barrel", ["W W", "W W", "WWW"], {
+    W: "gregitas:creosote_treated_lumber"
+  }).id("immersiveengineering:wooden_barrel")
+
   baseTFCMetals.forEach((metal) => {
     event.recipes.kubejs
       .shaped(`tfcgroomer:${metal}_grooming_station`, ["PHP", "PPP", "W W"], {
@@ -2505,6 +2509,7 @@ event.stonecutting("2x railways:riveted_locometal", "minecraft:iron_ingot")
         result: { item: `gregitas:${grain.id}_mash`, count: 1 }
       })
       .id(`gregitas:${grain.id}_mash`)
+
   })
 
   TFCGrainsToAlchohol.forEach((grain) => {

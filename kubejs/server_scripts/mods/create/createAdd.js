@@ -607,6 +607,11 @@ let createAdd = (/** @type {Internal.RecipesEventJS} */ event) => {
     event.recipes.create.milling('gtceu:zinc_dust', 'gtceu:zinc_ingot', 250)
 
     event.recipes.create.mixing(['gtceu:sticky_resin', Item.of('gtceu:sticky_resin').withChance(0.25)], ['#forge:small_dusts/sulfur', Fluid.of('gregitas:raw_resin', 1000)], 250, 'heated')
+TFCGrains.forEach((grain) => {
+    event.recipes.create.mixing([`firmalife:food/${grain}_dough`],
+         [Item.of(`tfc:food/${grain}_flour`), Fluid.of('firmalife:yeast_starter', 250), Item.of('#tfc:sweetener')], 
+         250, 
+         'heated')})
 
     let addMoldChiselDeploying = (resultItem, moldItem, breakChance, fluidIngredientId, fluidAmount) => {
         let resultMold = (breakChance != 1) ? Item.of(moldItem).withChance(1 - breakChance) : 0;

@@ -68,7 +68,6 @@ let hideItems = (/** @type {Internal.HideJEIEventJS}*/ event) => {
     event.hide("immersiveengineering:windmill")
     event.hide("immersiveengineering:sample_drill")
     event.hide("immersiveengineering:dynamo")
-    event.hide("immersiveengineering:wooden_barrel")
     event.hide("immersiveengineering:crafting_table")
     event.hide("immersiveengineering:crate")
     event.hide("immersiveengineering:reinforced_crate")
